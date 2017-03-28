@@ -24,4 +24,5 @@ public class MessageOfTheDayAdapter {
         }
         return messages.get(0);
     }
+
 }
