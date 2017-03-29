@@ -1,5 +1,5 @@
 box: maven:latest
 build:
   steps:
-    - mmsikora/maven:
+    - xenoterracide/maven:
         goals: test
