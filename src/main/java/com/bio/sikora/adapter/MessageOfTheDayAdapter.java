@@ -19,7 +19,7 @@ public class MessageOfTheDayAdapter {
 
     public MessageOfTheDay getMessageOfTheDay() {
         List<MessageOfTheDay> messages = (List<MessageOfTheDay>) repository.findAll();
-        if (messages == null || messages.size() > 0) {
+        if (messages == null || messages.size() == 0) {
             throw new ResourceNotFoundException("No messages of the day found, sad.");
         }
         return messages.get(0);
